@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #3e3e3e;
+  color: #fff;
+  margin: 0;
+}
+
+#app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #222;
+  padding: 0.5rem 1.5rem
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+button,
+.ship .tile {
+  transition: background-color 0.05s ease-out;
+}
+
+.sidebar {
+  background-color: #333;
+  min-height: 100%;
+  flex-basis: 300px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.button-container button {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #555;
+  color: #fff;
+  padding: 0.5em;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #888;
+  background-color: #444;
+  cursor: auto;
+}
+
+button:enabled:hover {
+  background-color: #4d4d4d;
+}
+
+.field-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.field {
+  padding: 1.5rem;
+  background-color: #343434;
+}
+
+.field-column {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 45px;
+  height: 45px;
+  background-color: #595959;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-field .tile:hover {
+  background-color: #777;
+}
+
+.tile.picked {
+  background-color: #505050;
+}
+
+.active-field .tile.picked:hover {
+  background-color: #866;
+}
+
+.field .tile.selected {
+  background-color: rgb(255, 81, 0) !important;
+}
+
+.ship {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.ship .tile {
+  background-color: rgb(255, 175, 27);
+  cursor: pointer;
+}
+
+.ship:hover .tile {
+  background-color: rgb(214, 139, 0);
+}
+
+.ship.selected .tile {
+  background-color: rgb(170, 91, 0);
+}
+
+.footer {
+  margin-top: 1rem;
+}
