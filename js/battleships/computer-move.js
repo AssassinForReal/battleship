@@ -24,7 +24,7 @@ export const computerMove = () => {
 
       if (context.computerHits === context.availableHits) {
         setTimeout(() => {
-          alert('Wygrał komputer!')
+          alert('The computer has won!')
         }, 50)
 
         const hComputerField = context.ui.hComputerField

@@ -87,8 +87,8 @@ export const app = () => {
   context.ui.hPlayerFooter = footer()
   context.ui.hComputerFooter = footer()
 
-  const hPlayerFieldColumn = fieldColumn('Gracz', hPlayerField, context.ui.hPlayerFooter)
-  const hComputerFieldColumn = fieldColumn('Komputer', hComputerField, context.ui.hComputerFooter)
+  const hPlayerFieldColumn = fieldColumn('You', hPlayerField, context.ui.hPlayerFooter)
+  const hComputerFieldColumn = fieldColumn('Computer', hComputerField, context.ui.hComputerFooter)
 
   return [
     header,

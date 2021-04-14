@@ -40,7 +40,7 @@ export const computerField = () => {
 
       if (context.playerHits === context.availableHits) {
         setTimeout(() => {
-          alert('Wygrałeś!')
+          alert('You have won!')
         }, 50)
         
         stopGame()

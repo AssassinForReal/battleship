@@ -11,7 +11,7 @@ import { statusBar } from './status-bar.js'
 
 export const sidebar = () => {
   const hBtnStart = component('button', 'Start', { disabled: true })
-  const hBtnRandom = component('button', 'Wygeneruj losowe statki')
+  const hBtnRandom = component('button', 'Generate random ships')
 
   context.ui.hBtnStart = hBtnStart
   context.ui.hBtnRandom = hBtnRandom
